@@ -31,7 +31,7 @@ const favicon_webp = await getImage({
 const pageTitle = "stoicopa";
 const metaDescription =
   "My personal hamster wheel.";
-const { image, description, author, pubDate, updatedDate, title, site_name, alt, is404Page = false } =
+const { image, description, author, pubDate, updatedDate, title, location, site_name, alt, is404Page = false } =
   Astro.props;
 ---
 
@@ -48,7 +48,7 @@ const { image, description, author, pubDate, updatedDate, title, site_name, alt,
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={ site_name || "stoicopa" } />
     <meta name="og:image" content={ image || `${baseUrl}${metaImage?.src}` } />
-    <meta name="article:author" content={ author || "Erfi Anugrah" } />
+    <meta name="article:author" content={ author || "JJ" } />
     <meta name="article:published_time" content={ pubDate } />
     <meta name="article:modified_time" content={ updatedDate } />
     <meta name="og:url" content={ Astro.url } />
